@@ -20,4 +20,6 @@ style="display:flex; justify-content:space-between"
       >expand_more</i>
     </div>
   </div>
-  <button class="btn btn-primary" (click)="showAll()">Show All</button>
+  <button 
+  *ngIf="limit<items.length"
+  class="btn btn-primary" (click)="showAll()">Show All</button>
